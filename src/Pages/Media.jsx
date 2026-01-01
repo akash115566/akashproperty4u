@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../style/Media.css";
+import "../style/media.css";
 
 const awardImages = [
   "/me11.webp",
