@@ -8,7 +8,7 @@ const Brokerage = () => {
 
       {/* 🔶 TOP BANNER */}
       <div className="brokerage-banner">
-        <img src="/ab1.webp" alt="Brokerage Scheme Banner" />
+        <img src="/br1.webp" alt="Brokerage Scheme Banner" />
         <div className="banner-overlay">
           <h1>Brokerage Scheme</h1>
         </div>
