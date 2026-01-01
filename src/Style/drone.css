@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* horizontal scroll remove */
+}
+/* ===== Banner ===== */
+.drone-banner {
+  position: relative;
+  width: 120%;
+  /* min-width: 1350px; */
+  /* margin-left: 30px; */
+  height: auto;
+}
+
+.drone-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .drone-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drone-banner-overlay h1 {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-align: center;
+} */
+
+/* ===== Section ===== */
+.drone-section {
+  /* padding: 50px 15px; */
+  display: flex;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+/* ===== Border Box ===== */
+.drone-box {
+  width: 90%;          /* full width ke kareeb */
+  max-width: 900px;    /* max-width maintain */
+  border: 2px solid orange;
+  padding: 35px 40px;
+  background: #fff;
+  text-align: center;
+  border-radius: 12px;
+  box-sizing: border-box; /* ensure padding included in width */
+}
+
+.drone-box h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.drone-box p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* ===== List ===== */
+.drone-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  text-align: left;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.drone-box li {
+  font-size: 16px;
+  line-height: 30px;
+  color: #444;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .drone-banner-overlay h1 {
+    font-size: 28px;
+  }
+
+  .drone-box {
+    padding: 25px 20px;
+  }
+
+  .drone-box h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drone-banner {
+    height: 230px;
+  }
+
+  .drone-box p,
+  .drone-box li {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}

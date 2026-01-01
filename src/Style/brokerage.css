@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* PAGE RESET */
+.brokerage-page {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🔶 BANNER */
+.brokerage-banner {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+.brokerage-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* 🔶 CONTENT WRAPPER */
+.brokerage-content-wrapper {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  background: #fafafa;
+}
+
+.brokerage-content {
+  max-width: 1100px;
+  width: 100%;
+  border: 2px solid orange;
+  padding: 40px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+/* TEXT STYLES */
+.brokerage-content h2 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.brokerage-content h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.brokerage-content p {
+  line-height: 1.7;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.brokerage-content ul {
+  padding-left: 20px;
+}
+
+.brokerage-content ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* 🔥 HIGHLIGHT */
+.highlight-text {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: orange;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .brokerage-banner {
+    height: 45vh;
+  }
+
+  .banner-overlay h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .brokerage-content {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brokerage-banner {
+    height: 38vh;
+  }
+
+  .banner-overlay h1 {
+    font-size: 1.6rem;
+  }
+
+  .brokerage-content p,
+  .brokerage-content li {
+    font-size: 14px;
+  }
+}
