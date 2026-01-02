@@ -105,7 +105,7 @@ html, body {
 
 @media (max-width: 480px) {
   .drone-banner {
-    height: 230px;
+    height: auto;
   }
 
   .drone-box p,

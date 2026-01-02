@@ -77,6 +77,17 @@ const location = useLocation();
     }
   }, [location]);
 
+
+
+  const channelImages = [
+    "/1.webp",
+    "/channel2.png",
+    "/channel3.png",
+    "/channel4.png",
+    "/channel5.png",
+    "/channel6.png",
+  ];
+
   return (
     <>
       <section>
@@ -378,27 +389,25 @@ const location = useLocation();
 
 
       {/* ================= TV SHOW CHANNELS ================= */}
-      <section className="section-padding tv-section">
-        <div className="tv-content">
-          <div className="tv-left">
-            <img src="/lo2.webp" alt="Property4You TV Show" />
-          </div>
+      {/* <section className="section-padding tv-section">
+      <div className="tv-content">
+        <div className="tv-left">
+          <img src="/lo2.webp" alt="Property4You TV Show" />
+        </div>
 
-          <div className="tv-right">
-            <h2>
-              PROPERTY4YOU TV SHOW APPROVED ON THESE NATIONAL CHANNELS
-            </h2>
+        <div className="tv-right">
+          <h2>PROPERTY4YOU TV SHOW APPROVED ON THESE NATIONAL CHANNELS</h2>
 
-            <div className="channel-slider2">
-              <div className="slider-track2">
-                {[1,2,3,4,5,6].map((c) => (
-                  <img key={c} src={`/channel${c}.png`} alt="Channel" />
-                ))}
-              </div>
+          <div className="channel-slider2">
+            <div className="slider-track2">
+              {channelImages.map((src, index) => (
+                <img key={index} src={src} alt={`Channel ${index + 1}`} />
+              ))}
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section> */}
     </>
   );
 };

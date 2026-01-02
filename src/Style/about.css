@@ -89,6 +89,10 @@
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+  .about-banner{
+    width: 100%;
+    height: auto;
+  }
   .about-section {
     padding: 30px 20px;
   }
@@ -100,5 +104,23 @@
 
   .banner-overlay h1 {
     font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .about-banner{
+    width: 100%;
+    height: auto;
+  }
+  .about-section {
+    padding: 20px 10px;
+  }
+
+  .founder-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-overlay h1 {
+    font-size: 20px;
   }
 }

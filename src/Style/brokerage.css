@@ -95,7 +95,7 @@
 /* 📱 RESPONSIVE */
 @media (max-width: 768px) {
   .brokerage-banner {
-    height: 45vh;
+    height: auto;
   }
 
   .banner-overlay h1 {
@@ -111,7 +111,7 @@
 
 @media (max-width: 480px) {
   .brokerage-banner {
-    height: 38vh;
+    height: auto;
   }
 
   .banner-overlay h1 {

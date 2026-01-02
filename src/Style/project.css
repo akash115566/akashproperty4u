@@ -86,7 +86,7 @@
 
 @media (max-width: 480px) {
   .project-banner {
-    height: 240px;
+    height: auto;
   }
 
   .project-content p,
