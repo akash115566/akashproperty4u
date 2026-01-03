@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* SECTION */
+.services-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #f4f6f8;
+}
+
+/* CONTAINER */
+.services-container {
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* HEADING */
+.services-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+/* GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Desktop: 3 */
+  gap: 30px;
+}
+
+/* CARD */
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.service-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.service-card h3 {
+  font-size: 20px;
+  margin: 20px 15px 10px;
+  color: #111;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  padding: 0 20px 20px;
+}
+
+/* BUTTON */
+.service-btn {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 10px 26px;
+  background: #ff9900;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.service-btn:hover {
+  background: #111;
+}
+
+/* 📱 TABLET */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-title {
+    font-size: 32px;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-title {
+    font-size: 26px;
+  }
+
+  .service-card img {
+    height: 180px;
+  }
+}

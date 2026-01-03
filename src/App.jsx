@@ -9,7 +9,12 @@ import Internet from "./Pages/Internet";
 import Special from "./Pages/Special";
 import Brokerage from "./Pages/Brokerage";
 import Media from "./Pages/Media";
+import Footer from "./Pages/Footer";
 import Contact from "./Pages/Contact";
+import Terms from "./Pages/Terms";
+import Services from "./Pages/Services";
+import Legal from "./Pages/Legal";
+import Privacy from "./Pages/Privacy";
 import ScrollToTop from "./Pages/ScrollToTop";  // <-- yaha import fix
 
 const App = () => {
@@ -27,10 +32,15 @@ const App = () => {
               <Route path="/brokerage" element={<Brokerage />} />
               <Route path="/media" element={<Media />} />
                <Route path="/contact" element={<Contact />} />
+                <Route path="/footer" element={<Footer />} />
+                  <Route path="/terms" element={<Terms />} />
+                   <Route path="/services" element={<Services />} />
+                   <Route path="/legal" element={<Legal />} />
+                    <Route path="/privacy" element={<Privacy />} />
 
         {/* Baaki routes yaha add kar sakte ho */}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 };
