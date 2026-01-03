@@ -89,7 +89,7 @@
 .founder-box {
   display: flex;
   gap: 45px;
-  /* align-items: center; */
+  align-items: center;
   margin-top: 25px;
 }
 .founder-box div p>span{
@@ -99,7 +99,6 @@
 
 .founder-box img {
   width: 300px;
-  height: auto;
   border-radius: 10px;
 }
 

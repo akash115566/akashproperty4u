@@ -67,10 +67,10 @@ const About = () => {
       <section className="about-section" >
         <h2 style={{ backgroundColor: "#2565bfff", color: "#fff" }}>FOUNDER MESSAGE</h2>
 
-        <div className="founder-box" style={{ justifyContent:'space-around'}}>
+        <div className="founder-box">
           <div> <img src="/ab2.webp" alt="Miss Pooja Sharma" /></div>
          
-          <div style={{textAlign:"center", width:"700px"}}>
+          <div >
             <h2>Celebrity Host & Founder</h2>
             <h3>Miss Pooja Sharma</h3>
 
@@ -92,10 +92,10 @@ const About = () => {
       <section className="about-section light-bg">
        
 
-        <div className="founder-box" style={{ justifyContent:'space-around'}}>
+        <div className="founder-box">
 
-          <div style={{textAlign:"center", width:"700px"}} >
-             <h2 >The Visionary Behind the Revolution</h2>
+          <div >
+             <h2>The Visionary Behind the Revolution</h2>
             <h3>Mr. Ankur Bansal</h3>
             <h4>Co-Founder</h4>
             <p>

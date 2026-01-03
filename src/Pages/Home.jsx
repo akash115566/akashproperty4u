@@ -107,6 +107,17 @@ const location = useLocation();
         </div>
       </section>
 
+
+
+
+       <section className="dev-brand-section">
+      <div className="dev-brand-container">
+        <h2 className="dev-brand-heading">
+          DEVELOPERS CORPORATE BRAND BUILDING
+        </h2>
+      </div>
+    </section>
+
    
     <section className="hot-deals">
       <h2 className="hot-deals-heading">HOT DEALS</h2>
