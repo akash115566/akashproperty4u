@@ -111,12 +111,18 @@ const location = useLocation();
 
 
        <section className="dev-brand-section">
-      <div className="dev-brand-container">
-        <h2 className="dev-brand-heading">
-          DEVELOPERS CORPORATE BRAND BUILDING
-        </h2>
-      </div>
-    </section>
+  <div className="dev-brand-container">
+    <h2 className="dev-brand-heading">
+      DEVELOPERS CORPORATE BRAND BUILDING
+    </h2>
+
+    <div className="dev-brand-logos">
+      <img src="/lo7.jfif" alt="Developer Logo 1" />
+      <img src="/lo6.jfif" alt="Developer Logo 2" />
+    </div>
+  </div>
+</section>
+
 
    
     <section className="hot-deals">
@@ -327,7 +333,7 @@ const location = useLocation();
           <h2>TOP REAL ESTATE SCHEME</h2>
         </div>
         <img
-          src="/top-scheme.jpg"
+          src="/lo8.webp"
           alt="Top Real Estate Scheme"
           className="full-width-img"
         />
@@ -419,6 +425,60 @@ const location = useLocation();
         </div>
       </div>
     </section> */}
+
+
+    <section className="tv-section">
+  <div className="tv-top">
+    {/* LEFT IMAGE */}
+    <div className="tv-left">
+      <img src="/lo2.webp" alt="Property4You TV Show" />
+    </div>
+
+    {/* RIGHT CONTENT */}
+    <div className="tv-right">
+      <h2>
+        PROPERTY4YOU TV SHOW APPROVED ON THESE NATIONAL CHANNELS
+      </h2>
+    </div>
+  </div>
+
+  {/* FULL WIDTH SLIDER */}
+  {/* <div className="tv-slider">
+    <div className="tv-slider-track">
+      <img src="/l1.webp" alt="Channel 1" />
+      <img src="/l2.webp" alt="Channel 2" />
+      <img src="/l3.svg" alt="Channel 3" />
+      <img src="/l4.webp" alt="Channel 4" />
+       <img src="/l5.webp" alt="Channel 1" />
+      <img src="/l6.webp" alt="Channel 2" />
+      <img src="/l7.webp" alt="Channel 3" />
+      <img src="/l8.webp" alt="Channel 4" />
+       <img src="/l9.webp" alt="Channel 3" />
+      <img src="/l10.webp" alt="Channel 4" />
+        <img src="/l11.webp" alt="Channel 1" />
+      <img src="/l12.webp" alt="Channel 2" />
+      <img src="/l13.avif" alt="Channel 3" />
+      <img src="/l4.webp" alt="Channel 4" />
+
+    
+         <img src="/l1.webp" alt="Channel 1" />
+      <img src="/l2.webp" alt="Channel 2" />
+      <img src="/l3.svg" alt="Channel 3" />
+      <img src="/l4.webp" alt="Channel 4" />
+       <img src="/l5.webp" alt="Channel 1" />
+      <img src="/l6.webp" alt="Channel 2" />
+      <img src="/l7.webp" alt="Channel 3" />
+      <img src="/l8.webp" alt="Channel 4" />
+       <img src="/l9.webp" alt="Channel 3" />
+      <img src="/l10.webp" alt="Channel 4" />
+        <img src="/l11.webp" alt="Channel 1" />
+      <img src="/l12.webp" alt="Channel 2" />
+      <img src="/l13.avif" alt="Channel 3" />
+      <img src="/l4.webp" alt="Channel 4" />
+    </div>
+  </div> */}
+</section>
+
     </>
   );
 };
