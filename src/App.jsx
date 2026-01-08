@@ -15,12 +15,17 @@ import Terms from "./Pages/Terms";
 import Services from "./Pages/Services";
 import Legal from "./Pages/Legal";
 import Privacy from "./Pages/Privacy";
+import Apex from "./Pages/Apex";
+import Spect from "./Pages/Spect";
 import ScrollToTop from "./Pages/ScrollToTop";  // <-- yaha import fix
 
 const App = () => {
+  
+  // const location = useLocation();
+  //  const hideLayout = location.pathname === "/spect";
   return (
     <BrowserRouter>
-      <Navbar />
+       { <Navbar />}
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -37,10 +42,12 @@ const App = () => {
                    <Route path="/services" element={<Services />} />
                    <Route path="/legal" element={<Legal />} />
                     <Route path="/privacy" element={<Privacy />} />
+                       <Route path="/apex" element={<Apex />} />
+                            <Route path="/spect" element={<Spect />} />
 
         {/* Baaki routes yaha add kar sakte ho */}
       </Routes>
-      <Footer />
+      { <Footer />}
     </BrowserRouter>
   );
 };

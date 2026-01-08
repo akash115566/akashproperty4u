@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"; // <-- Hooks import added
-import { useLocation } from "react-router-dom";
+import { useLocation,Link } from "react-router-dom";
 import "../Style/home.css"
 
 const Home = () => {
@@ -19,48 +19,56 @@ const Home = () => {
 
 
 
-
-  const cardsData = [
+const cardsData = [
   {
     img: "/h1.webp",
     title: "Project 1",
     desc: "Apex Golf Avenue is a residential project developed by Floral Realcon Pvt Ltd in Noida Extension (Greater Noida West).",
+   link: "https://www.apexgroupgolfavenue.com/"
+
   },
   {
-    img:"/h2.webp",
+    img: "/h2.webp",
     title: "Spectrum at metro",
-    desc: "Spectrum at Metro, located in Sector 75, Noida, is a large commercial project developed by Spectrum Group. It offers a mix of retail shops, office spaces.",
+    desc: "Spectrum at Metro, located in Sector 75, Noida, is a large commercial project developed by Spectrum Group.",
+    link: "https://www.spectrummetro.com/"
   },
   {
-    img:"/h3.webp",
+    img: "/h3.webp",
     title: "Prateek Edifice",
-    desc: "Prateek Edifice developed by Prateek Group, is a premium residential project in Sector 107, Delhi NCR , offering 2 and 3 BHK apartments.",
+    desc: "Prateek Edifice developed by Prateek Group, is a premium residential project in Sector 107.",
+    link: "https://prateekgroup.com/prateek-edifice"
   },
   {
     img: "/h4.webp",
     title: "Aggrawal Heights",
-    desc: "Aggrawal developed by Aggrawal Heights, is a premium residential project in Sector 107, Delhi NCR , offering 2 and 3 BHK apartments.",
+    desc: "Aggrawal Heights is a premium residential project.",
+    link: "https://rishabhgroup.co.in/"
   },
   {
     img: "/h5.webp",
     title: "Apex Athena",
-    desc: "Apex Athena offers Greek-style living in Noida’s most prestigious location—meticulously planned for elegance and comfort.",
+    desc: "Apex Athena offers Greek-style living in Noida.",
+    link: "/apex-athena"
   },
   {
-    img:"/h6.webp",
+    img: "/h6.webp",
     title: "Amaatra Homes",
-    desc: "Amaatra Homes, developed by Amaatra Group, is a premium residential project in Sector 10, Greater Noida West, offering 2 and 3 BHK apartments.",
-  },
-   {
-    img:"/h7.webp",
-    title: "VVIP Homes",
-    desc: "VVIP Homes in Greater Noida West offers 2/3/4 BHK podium-based luxury across 8 acres with 81% open area, clubhouse, spa, gym & in-house theatre.",
+    desc: "Amaatra Homes is a premium residential project.",
+    link: "/amaatra-homes"
   },
   {
-    img:"/h8.webp",
-    title: "Rishabh Group",
-    desc: "Rishabh Group, Since 1992, RISHABH GROUP has built trust through quality homes—crafted with integrity, expertise, and a legacy of excellence.",
+    img: "/h7.webp",
+    title: "VVIP Homes",
+    desc: "VVIP Homes offers luxury living.",
+    link: "/vvip-homes"
   },
+  {
+    img: "/h8.webp",
+    title: "Rishabh Group",
+    desc: "Rishabh Group has built trust since 1992.",
+    link: "/rishabh-group"
+  }
 ];
 
 const location = useLocation();
@@ -134,7 +142,9 @@ const location = useLocation();
             <h3 className="card-title">{card.title}</h3>
             <p className="card-desc">{card.desc}</p>
             <div className="card-buttons single-button">
-              <a href="/details" className="btn btn-primary">View Details</a>
+             <Link to={card.link} className="btn btn-primary">
+            View Details
+          </Link>
             </div>
           </div>
         ))}
