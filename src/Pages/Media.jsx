@@ -23,6 +23,27 @@ const images = [
    
 ];
 
+const videoLinks = [
+  "https://www.youtube.com/embed/lI8w-ew3XEk?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/F0d7rJclVNY?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/SvOu1OIphII?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/GNTEf8sdaNw?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/4dFlWmFLyDc?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/plAcay25ByE?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/RZRDF1k3cF4?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/1iyIvk71--U?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/eC6yXSbLKws?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/FY7zFllmknQ?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/ld_W1nvwXr0?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/LL1Y8dA_e44?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/G7D2joHVhiI?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/kDGxj2yQvmw?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/uydTOHnHMIM?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/CruwOajievE?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/q9gXuxSWnXg?autoplay=1&mute=1",
+  "https://www.youtube.com/embed/tdZFRo42SBo?autoplay=1&mute=1",
+];
+
 const Media = () => {
   const [index, setIndex] = useState(0);
 
@@ -86,17 +107,23 @@ const Media = () => {
 </section>
 
       {/* ================= VIDEOS ================= */}
-      <section className="video-section">
-        <h2 className="section-title">Videos</h2>
+          <section className="video-section">
+      <h2 className="section-title">Videos</h2>
 
-        <div className="video-grid">
-          {Array.from({ length: 19 }).map((_, i) => (
-            <video key={i} controls>
-              <source src={`/videos/v${i + 1}.mp4`} type="video/mp4" />
-            </video>
-          ))}
-        </div>
-      </section>
+      <div className="video-grid">
+        {videoLinks.map((link, i) => (
+          <div className="video-wrapper" key={i}>
+            <iframe
+              src={link}
+              title={`video-${i}`}
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
+          </div>
+        ))}
+      </div>
+    </section>
 
     </div>
   );

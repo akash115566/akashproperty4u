@@ -28,7 +28,7 @@ const Footer = () => {
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li><Link to="/legal">Legal Advisor</Link></li>
-             <li><Link to="/le">   DEVELOPERS CORPORATE BRAND BUILDING</Link></li>
+             <li><Link to="/" state={{ scrollTo: "dev-brand" }}>   DEVELOPERS CORPORATE BRAND BUILDING</Link></li>
           </ul>
         </div>
 
@@ -43,7 +43,7 @@ const Footer = () => {
           </ul>
 
           <div className="footer-contact">
-            <p><i className="fa-solid fa-phone"></i> +91 70424 38293</p>
+            <p><i className="fa-solid fa-phone"></i> +91 8076151724</p>
             <p><i className="fa-solid fa-envelope"></i> property4you@gmail.com</p>
           </div>
         </div>

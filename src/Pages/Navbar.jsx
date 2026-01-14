@@ -48,8 +48,8 @@ const Navbar = () => {
         }}>
           <div style={{ fontSize: "20px", fontWeight: "bold", color: "#111" }}><img
     src="./lo2.webp"
-    alt="MSME Business Care"
-    style={{ height: "32px", width: "auto" }}
+    alt="property4you-react"
+    style={{ height: "40px", width: "80px" }}
   /></div>
 
           {/* Navbar Links */}
