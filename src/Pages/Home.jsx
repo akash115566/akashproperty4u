@@ -648,6 +648,23 @@ const videoLinks = [
             <img src="/l5.webp" alt="Channel 5" />
             <img src="/l6.webp" alt="Channel 6" />
           </div> */}
+           <section>
+        <div className="slider5" ref={slideRef} style={{ overflow: "hidden", width: "100%" }}>
+          <div
+            className="slider-track5"
+            style={{
+              display: "flex",
+              transition: "transform 0.5s ease-in-out",
+              transform: `translateX(-${currentIndex * 100}%)`,
+            }}
+          >
+            {images1.map((src, i) => (
+              <img key={i} src={src} alt={`slide-${i}`} style={{ width: "100%", flexShrink: 0 }} />
+            ))}
+          </div>
+        </div>
+      </section>
+
 
  
 </section>
@@ -677,23 +694,7 @@ const videoLinks = [
 
 
 
-   <section>
-        <div className="slider5" ref={slideRef} style={{ overflow: "hidden", width: "100%" }}>
-          <div
-            className="slider-track5"
-            style={{
-              display: "flex",
-              transition: "transform 0.5s ease-in-out",
-              transform: `translateX(-${currentIndex * 100}%)`,
-            }}
-          >
-            {images1.map((src, i) => (
-              <img key={i} src={src} alt={`slide-${i}`} style={{ width: "100%", flexShrink: 0 }} />
-            ))}
-          </div>
-        </div>
-      </section>
-
+  
 
 
 

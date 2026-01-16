@@ -898,8 +898,8 @@ body {
 .tv-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
+  gap: 10px;
   margin-bottom: 40px;
 }
 
@@ -911,7 +911,7 @@ body {
 
 .tv-left img {
   width: 100%;
-  max-width: 420px;
+  max-width: 300px;
   height: auto;
   border-radius: 14px;
   object-fit: cover;
@@ -1084,14 +1084,17 @@ body {
 /* ===== VIDEO SECTION ===== */
 .video-section {
   width: 100%;
-  /* padding: 40px 16px; */
+  margin-bottom: 30px;
+  
 }
 
 .section-title {
   text-align: center;
-  font-size: clamp(20px, 4vw, 32px);
+  font-size: clamp(0px, 4vw, 32px);
   margin-bottom: 30px;
   font-weight: 700;
+  border: 2px solid #111;
+  padding: 20px;
 }
 
 /* ===== GRID ===== */
@@ -1197,8 +1200,9 @@ body {
 
 /* ===== MOBILE 360px ===== */
 @media (max-width: 360px) {
-  .video-grid {
-    gap: 14px;
+  .section-title {
+    margin-top: 0 !important;
+    margin-bottom: 20px;
   }
 }
 

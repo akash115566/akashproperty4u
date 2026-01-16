@@ -3,6 +3,99 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* Section Styling */
+.awards-section5 {
+  padding: 40px 20px;
+  background: #111;
+  text-align: center;
+}
+
+.awards-title5 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #fff;
+  width: 250px;
+  padding: 10px;
+    text-align: center; /* <- ye add karo */
+  margin-left: auto;  /* <- optional, horizontal centering */
+  margin-right: auto; /* <- optional, horizontal centering */
+
+  border: 2px solid #fff;
+}
+
+/* Slider Container */
+.slider-container5 {
+  overflow: hidden;       /* hide overflowing images */
+  width: 100%;
+  position: relative;
+}
+
+/* Slider Track */
+.slider-track5 {
+  display: flex;          /* horizontal layout */
+  gap: 20px;              /* space between cards */
+  will-change: transform; /* improve animation performance */
+}
+
+/* Each Image Card */
+.image-card5 {
+  min-width: 50px;       /* card width */
+  flex-shrink: 0;         /* prevent shrinking */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.image-card5 img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
+/* Hover effect (desktop only) */
+@media (hover: hover) {
+  .image-card5:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive Breakpoints */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .image-card5 {
+    min-width: 180px;
+  }
+  .awards-title5 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .image-card5 {
+    min-width: 140px;
+  }
+  .awards-title5 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .image-card5 {
+    min-width: 120px;
+  }
+  .awards-title5 {
+    font-size: 1.3rem;
+  }
+}
+
 .media-page {
   width: 100%;
   font-family: "Segoe UI", sans-serif;
