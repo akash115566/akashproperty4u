@@ -1275,11 +1275,12 @@ body {
 @media (max-width: 360px) {
   .slider5 {
     height: 60px;
+    gap: -10px;
   
   }
   .slider-track5 img {
-   
-    width: 50px;
+   max-width: 90px;
+    width: 70px;
     height: 60px;
     margin-right: 5px;
   }

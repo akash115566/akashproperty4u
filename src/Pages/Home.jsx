@@ -238,7 +238,7 @@ const videoLinks = [
 
 
 
-  const images1 = ["/l9.webp", "/l15.jfif",  "/l7.webp",   "/l16.jfif",   "/l5.webp",  "/l6.webp",  "/l7.webp",   "/l16.jfif",   "/l5.webp",  "/l6.webp"];
+  const images1 = ["/l9.webp", "/l15.jfif",  "/l7.webp",   "/l16.jfif",   "/l5.webp",  "/l6.webp",  "/l7.webp",   "/l16.jfif",   "/l5.webp",  "/l6.webp",   "/l9.webp",  "/l7.webp"];
 
   
  
