@@ -520,6 +520,24 @@ const videoLinks = [
     ))}
   </div>
 </section>
+<section className="video-section">
+      <h2 className="section-title">Videos</h2>
+
+      <div className="video-grid">
+        {videoLinks.map((link, i) => (
+          <div className="video-wrapper" key={i}>
+            <iframe
+              src={link}
+              title={`video-${i}`}
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
+          </div>
+        ))}
+      </div>
+    </section>
+
 
 
       {/* ================= CELEBRITY CLIENTS TESTIMONIALS ================= */}
@@ -673,24 +691,7 @@ const videoLinks = [
 
 
 
-      <section className="video-section">
-      <h2 className="section-title">Videos</h2>
-
-      <div className="video-grid">
-        {videoLinks.map((link, i) => (
-          <div className="video-wrapper" key={i}>
-            <iframe
-              src={link}
-              title={`video-${i}`}
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            ></iframe>
-          </div>
-        ))}
-      </div>
-    </section>
-
+      
 
 
 
