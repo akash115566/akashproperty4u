@@ -328,6 +328,10 @@ body {
   text-align: left;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+
+  display: flex;              /* 🔥 ADD */
+  flex-direction: column;     /* 🔥 ADD */
+  height: 100%;               /* 🔥 ADD */
 }
 
 .card:hover {
@@ -356,6 +360,7 @@ body {
 .card-buttons {
   display: flex;
   gap: 10px;
+  margin-top: auto;           /* 🔥 MAGIC LINE */
 }
 
 .card-buttons.single-button {
@@ -658,8 +663,11 @@ body {
 
 /* VIDEO GRID */
 .video-grid {
-  display: grid;
+   display: grid;
   gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .four-column {
@@ -690,62 +698,7 @@ body {
   gap: 15px;
 }
 
-.seven-column {
-  grid-template-columns: repeat(7, 1fr);
-}
 
-.image-grid img {
-  width: 100%;
-  height: 100px;
-  object-fit: contain;
-  padding: 0px;
-  background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-/* TV SECTION */
-.tv-section {
-  background: #f8f8f8;
-}
-
-.tv-content {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-
-.tv-left img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.tv-right h2 {
-  margin-bottom: 20px;
-  font-size: 3rem;
-  padding: 50px;
-}
-
-/* SIMPLE SLIDER */
-/* .channel-slider2 {
-  overflow: hidden;
-}
-
-.slider-track2 {
-  display: flex;
-  gap: 30px;
-  animation: slide 15s linear infinite;
-}
-
-.slider-track2 img {
-  width: 120px;
-  object-fit: contain;
-}
-
-@keyframes slide {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-} */
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
@@ -880,6 +833,100 @@ body {
     font-size: 22px;
   }
 }
+
+
+/* ===== SECTION ===== */
+.section-padding5 {
+  width: 100%;
+  padding: 40px 16px;
+}
+
+/* ===== HEADING ===== */
+.center-heading5 {
+  text-align: center;
+  font-size: clamp(20px, 3.5vw, 34px);
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* ===== IMAGE GRID ===== */
+.image-grid5 {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== 7 COLUMN DESKTOP ===== */
+.seven-column5 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+/* ===== CLIENT LOGO ===== */
+.client-logo5 {
+  width: 100%;
+  height: 90px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.client-logo5:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   LARGE TABLET (≤ 1200px)
+========================= */
+@media (max-width: 1200px) {
+  .seven-column5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* =========================
+   TABLET (≤ 992px)
+========================= */
+@media (max-width: 992px) {
+  .seven-column5 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .client-logo5 {
+    height: 85px;
+  }
+}
+
+/* =========================
+   MOBILE (≤ 768px)
+========================= */
+@media (max-width: 768px) {
+  .seven-column5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .client-logo5 {
+    height: 80px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (≤ 480px)
+========================= */
+@media (max-width: 480px) {
+  .seven-column5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .client-logo5 {
+    height: 70px;
+  }
+}
+
 
 
 
@@ -1082,13 +1129,14 @@ body {
 
 
 /* ===== VIDEO SECTION ===== */
-.video-section {
+.video-section3 {
   width: 100%;
   margin-bottom: 30px;
+ 
   
 }
 
-.section-title {
+.section-title3 {
   text-align: center;
   font-size: clamp(0px, 4vw, 32px);
   margin-bottom: 30px;
@@ -1098,60 +1146,75 @@ body {
 }
 
 /* ===== GRID ===== */
-.video-grid {
+.video-grid3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
-  max-width: 1350px;
+  width: 100%;
+    padding: 40px;
+  max-width: 100%;     /* 🔥 remove restriction */
   margin: 0 auto;
 }
 
 /* ===== VIDEO CARD ===== */
-.video-wrapper {
+.video-wrapper3 {
   position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 ratio */
-  border-radius: 14px;
-  overflow: hidden;
   background: #000;
+  padding-top: 56.25%; /* 16:9 ratio */
 }
 
-/* ===== IFRAME ===== */
-.video-wrapper iframe {
+.video-wrapper3 iframe {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  border: none;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.45);
+  transition: 0.3s;
+}
+
+.video-overlay:hover {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /* ===== LARGE SCREENS ===== */
 @media (min-width: 1200px) {
-  .video-grid {
+  .video-grid3 {
     gap: 30px;
   }
 }
 
 /* ===== TABLET ===== */
 @media (max-width: 1024px) {
-  .video-section {
+  .video-section3 {
     padding: 32px 14px;
     width: auto;
     height: auto;
   }
-   .video-grid {
+   .video-grid3 {
     gap: 18px;
     width: auto;
     height: auto;
   }
 }
 @media (max-width: 998px) {
-  .video-section {
+  .video-section3 {
     padding: 32px 14px;
     width: auto;
     height: auto;
   }
-   .video-grid {
+   .video-grid3 {
     gap: 18px;
     width: auto;
     height: auto;
@@ -1159,24 +1222,24 @@ body {
 }
 
 @media (max-width: 768px) {
-  .video-section {
+  .video-section3 {
     padding: 32px 14px;
     width: auto;
     height: auto;
   }
-   .video-grid {
+   .video-grid3 {
     gap: 18px;
     width: auto;
     height: auto;
   }
 }
 @media (max-width: 560px) {
-  .video-section {
+  .video-section3 {
     padding: 42px 24px;
     width: auto;
     height: auto;
   }
-   .video-grid {
+   .video-grid3 {
     gap: 18px;
     width: auto;
     height: auto;
@@ -1185,13 +1248,13 @@ body {
 
 /* ===== MOBILE 480px ===== */
 @media (max-width: 480px) {
-  .video-section {
+  .video-section3 {
     width: auto;
     height: auto;
     padding: 24px 12px;
   }
 
-  .video-grid {
+  .video-grid3 {
     gap: 18px;
     width: auto;
     height: auto;
@@ -1199,12 +1262,30 @@ body {
 }
 
 /* ===== MOBILE 360px ===== */
+/* ===== MOBILE FIX (360px) ===== */
 @media (max-width: 360px) {
-  .section-title {
-    margin-top: 0 !important;
+
+  .video-section3 {
     margin-bottom: 20px;
   }
+
+  .section-title3 {
+    font-size: 20px;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+
+  .video-grid3 {
+    grid-template-columns: 1fr;   /* single column */
+    gap: 16px;
+    padding: 12px;               /* side padding fix */
+  }
+
+  .video-wrapper3 {
+    border-radius: 10px;
+  }
 }
+
 
 
 

@@ -44,7 +44,7 @@ const Footer = () => {
 
           <div className="footer-contact">
             <p><i className="fa-solid fa-phone"></i> +91 8076151724</p>
-            <p><i className="fa-solid fa-envelope"></i> property4you@gmail.com</p>
+            <p><i className="fa-solid fa-envelope"></i> Info@property4you.in</p>
           </div>
         </div>
 

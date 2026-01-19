@@ -68,7 +68,7 @@
 .footer-col ul li a {
   color: #111;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .footer-col ul li a:hover {
@@ -78,8 +78,9 @@
 /* CONTACT */
 .footer-contact p {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 18px;
   color: #111;
+  font-weight: 500;
 }
 
 .footer-contact i {
@@ -109,6 +110,78 @@
   }
 
   .footer-social a {
+    margin: 0 10px;
+  }
+}
+
+/* 📱 MOBILE – 480px */
+@media (max-width: 480px) {
+
+  .footer {
+    padding: 40px 16px 18px;
+  }
+
+  .footer-container {
+    flex-direction: column;      /* 🔥 stack columns */
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    min-width: 100%;
+  }
+
+  .footer-logo {
+    margin: 0 auto 12px;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+
+  .footer-social a {
+    margin: 0 10px;
+  }
+
+  .footer-col h3 {
+    font-size: 17px;
+  }
+
+  .footer-col ul li a,
+  .footer-contact p {
+    font-size: 14px;
+  }
+}
+
+/* 📱 EXTRA SMALL MOBILE – 360px */
+@media (max-width: 360px) {
+
+  /* LOGO IMAGE */
+  .footer-logo {
+    width: 250px;          /* bigger logo */
+  }
+
+  /* ALL LINKS FONT SIZE */
+  .footer-col ul li a {
+    font-size: 19px;       /* 🔥 as requested */
+    line-height: 1.6;
+  }
+
+  /* HEADINGS */
+  .footer-col h3,
+  .footer-left h3 {
+    font-size: 22px;
+  }
+
+  /* CONTACT TEXT */
+  .footer-contact p {
+    font-size: 20px;
+  }
+
+  /* SOCIAL ICONS */
+  .footer-social a {
+    font-size: 20px;
     margin: 0 10px;
   }
 }

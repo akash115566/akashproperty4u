@@ -6,7 +6,7 @@ const Internet = () => {
       {/* 🔝 TOP BANNER */}
       <section className="banner">
         <img
-          src="/dr1.webp"
+          src="/i1.webp"
           alt="Property 4 You Season 2"
         />
       </section>

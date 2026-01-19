@@ -31,6 +31,19 @@ const Home = () => {
 
 
 const cardsData = [
+   {
+  img: "/lo6.jfif",
+  title: "Samridhi Daksh Avenue",
+ desc: "Samridhi Daksh Avenue offers modern homes with premium amenities in well connected location",
+  link: "https://samridhidakshavenue.com/"
+}
+,
+    {
+    img: "/lo7.jfif",
+    title: "samridhi luxuriya Avenue",
+  desc: "Samridhi Luxuriya Avenue offers premium homes with modern amenities in connected location",
+  link: "http://samridhi-group.co.in/"
+  },
   {
     img: "/h1.webp",
     title: "Apex Golf Avenue",
@@ -214,6 +227,10 @@ const highRiseProjects = [
 ];
 
 
+
+
+
+  const [activeIndex, setActiveIndex] = useState(null);
 const videoLinks = [
   "https://www.youtube.com/embed/lI8w-ew3XEk?autoplay=1&mute=1",
   "https://www.youtube.com/embed/F0d7rJclVNY?autoplay=1&mute=1",
@@ -285,15 +302,16 @@ const videoLinks = [
       <img src="/hb3.jpeg" alt="Developer Logo 5" />    
       <img src="/hb4.jpeg" alt="Developer Logo 6" /> 
        <img src="/hb5.jpeg" alt="Developer Logo " />   
+        <img src="/h6.webp" alt="Developer Logo " />
    
   </div>
 
     <a href="https://share.google/Azd0lJzUEsf8Z7Mvp" target="_blank" rel="noopener noreferrer">
-      More Link
+  www.samridhigroup.co.in
     </a>
 
     <a href="https://share.google/uC8RPxjZspSBZZkxh" target="_blank" rel="noopener noreferrer">
-      More Link
+   www.samridhigroup.co.in
     </a>
 
        <a href="https://youtu.be/4xodRp7ToL8?si=sGox0CPHXPGPFw2o" target="_blank" rel="noopener noreferrer">
@@ -301,6 +319,35 @@ const videoLinks = [
     </a>
   </div>
 </section>
+
+
+
+     <section className="video-section3">
+      <h2 className="section-title3">Property 4 You Videos and Episodes</h2>
+
+      <div className="video-grid3">
+        {videoLinks.map((link, i) => (
+          <div
+            className="video-wrapper3"
+            key={i}
+            onClick={() => setActiveIndex(i)}
+          >
+            <iframe
+              src={
+                activeIndex === i
+                  ? `${link}?autoplay=1&controls=0&rel=0&modestbranding=1&showinfo=0`
+                  : `${link}?controls=0&rel=0&modestbranding=1&showinfo=0`
+              }
+              title={`video-${i}`}
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
+          </div>
+        ))}
+      </div>
+    </section>
+
 
 
    
@@ -520,23 +567,6 @@ const videoLinks = [
     ))}
   </div>
 </section>
-<section className="video-section">
-      <h2 className="section-title">Videos</h2>
-
-      <div className="video-grid">
-        {videoLinks.map((link, i) => (
-          <div className="video-wrapper" key={i}>
-            <iframe
-              src={link}
-              title={`video-${i}`}
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            ></iframe>
-          </div>
-        ))}
-      </div>
-    </section>
 
 
 
@@ -583,14 +613,14 @@ const videoLinks = [
 
 
       {/* ================= OUR ESTEEMED CLIENTS ================= */}
-      <section className="section-padding">
-  <h2 className="center-heading" style={{ border:" 2px solid #111",
+      <section className="section-padding5">
+  <h2 className="center-heading5" style={{ border:" 2px solid #111",
     padding:"18px 28px",
       borderRadius:"12px",
       
   }}>Our Esteemed Clients</h2>
 
-  <div className="image-grid seven-column">
+  <div className="image-grid5 seven-column5">
     {[
       { img: "/h27.webp", name: "Client 1" },
       { img: "/h28.webp", name: "Client 2" },
@@ -610,12 +640,15 @@ const videoLinks = [
       { img: "/h42.webp", name: "Client 16" },
       { img: "/h43.webp", name: "Client 17" },
       { img: "/h44.webp", name: "Client 18" },
+         { img: "/lo6.jfif", name: "Client 19" },
+      { img: "/lo7.jfif", name: "Client 20" },
+         
     ].map((client, index) => (
       <img
         key={index}
         src={client.img}
         alt={client.name}
-        className="client-logo"
+        className="client-logo5"
       />
     ))}
   </div>

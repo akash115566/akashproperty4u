@@ -6,7 +6,7 @@ const Special = () => {
           {/* 🔝 TOP BANNER */}
       <section className="eds-banner">
         <img
-          src="/ab1.webp"
+          src="/i2.webp"
           alt="Exclusive Developer Schemes Property4You"
         />
       </section>
